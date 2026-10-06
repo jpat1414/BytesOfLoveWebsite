@@ -83,24 +83,24 @@
 }
 
 #downloadCol{
-    columns: 3;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     padding-bottom: 30px;
-
     margin: 10px;
+    flex-wrap: wrap;
 }
 
 .column{
     background-color: white;
     padding: 30px;
-    margin-left: 20px;
     border-radius: 40px;
-    margin-right: 20px;
-    border: pink, 2px, dashed;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 40vh;
-
+    flex: 1 1 300px;
+    max-width: 300px;
+    min-height: 30px;
     align-items: center;
 }
 
@@ -151,4 +151,20 @@
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
+}
+
+@media (max-width: 800px) {
+    #downloadCol {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px;
+    }
+    
+    #downloadButton {width: 100%;}
+
+    #downloadButton a {font-size: 20px;}
 }

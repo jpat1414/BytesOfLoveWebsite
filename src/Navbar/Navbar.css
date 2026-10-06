@@ -18,6 +18,7 @@
   width: 60px;
   height: 60px;
   margin-left: 10px;
+  flex-shrink: 0;
 }
 
 .logo-container {
@@ -52,6 +53,7 @@
   cursor: pointer;
   color: rgba(156, 71, 150, 255);
 }
+
 
 /* Ideas: */
 /*   - A feel like the navbar still looks kind of slapped on there. Maybe adding the ufosc and bytes of love logo in the corners would help */
